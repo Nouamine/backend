@@ -19,6 +19,7 @@ import lombok.NoArgsConstructor;
 public class Article {
 
     @Id
+    @Column(nullable = true, length = 200)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

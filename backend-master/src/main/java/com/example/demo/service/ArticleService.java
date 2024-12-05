@@ -49,7 +49,7 @@ public class ArticleService {
                 .orElseThrow(() -> new RuntimeException("Article not found with ID: " + id));
     }
 
-    public void deleteArticle(Long id) {
+    public void deleteArticle(long id) {
         articleRepository.deleteById(id);
     }
 }

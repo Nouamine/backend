@@ -9,5 +9,6 @@ public class ArticleDTO {
     private LocalDate date;
     private String body;
     private String imageUrl;
+    private Long id;
 
 }

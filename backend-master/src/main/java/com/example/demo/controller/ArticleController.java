@@ -27,6 +27,7 @@ public class ArticleController {
         return articleService.getAllArticles().stream()
                 .map(article -> {
                     ArticleDTO dto = new ArticleDTO();
+                    dto.setId(article.getId());
                     dto.setTitle(article.getTitle());
                     dto.setDate(article.getDate());
                     dto.setBody(article.getBody());
